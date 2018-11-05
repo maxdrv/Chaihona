@@ -14,45 +14,45 @@ public class MyStepdefs {
     Steps steps = new Steps();
 
     @When("^Убрать всплыващие окна$")
-    public void deletePopupWindow() throws Throwable{
+    public void deletePopupWindow(){
         steps.window();
     }
 
     @When("^Нажать на кнопку меню$")
-    public void clickMenuButtom() throws Throwable{
+    public void clickMenuButtom(){
         steps.clickMainMenu();
     }
 
     @Then("^Перейти в меню доставки \"(.+)\"$")
-    public void moveToSubMenu(String text) throws Throwable{
+    public void moveToSubMenu(String text){
         steps.clickMenuItem(text);
     }
 
     @And("^Добавить в корзину \"(.+)\"$")
-    public void addToCart(String text) throws Throwable{
+    public void addToCart(String text){
         steps.addToCart(text);
     }
 
     @When("^Перейти в корзину$")
-    public void moveToCart() throws Throwable{
+    public void moveToCart(){
         steps.moveToCart();
 
     }
 
     @Then("^Проверить корзину$")
-    public void checkCartForItems() throws Throwable{
+    public void checkCartForItems(){
         steps.checkCart();
 
     }
 
     @And("^Удалить из корзины$")
-    public void deleteItemsFromCart() throws Throwable{
+    public void deleteItemsFromCart(){
         steps.deleteCartItems();
 
     }
 
     @And("^Проверить пустая ли корзина$")
-    public void checkCartForEmpty() throws Throwable{
+    public void checkCartForEmpty(){
         steps.checkForEmpty();
     }
 }

@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources",
         glue = {"chai"},
+        tags = {"@all"},
         plugin = {"ru.yandex.qatools.allure.cucumberjvm.AllureReporter"}
         //snippets = SnippetType.CAMELCASE
         //,format = {"pretty", "html:output"}

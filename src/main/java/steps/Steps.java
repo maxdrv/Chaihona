@@ -18,7 +18,7 @@ public class Steps {
 
     @Step("Убрать всплывающее окно")
     public void window(){
-        mainPage.window();
+        new MainPage().window();
     }
 
     @Step("Перейти в меню доставки")
